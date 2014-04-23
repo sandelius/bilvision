@@ -1,6 +1,6 @@
 # Bilvision
 
-TODO: Write a gem description
+Ruby wrapper for Bilvision api. [www.bilvision.se](http://www.bilvision.se/)
 
 ## Installation
 
