@@ -18,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    Bilvision.configure do |config|
+      config.user_id  = 'username'
+      config.password = '<secret>'
+    end
+
+    client = Bilvision::Request.new('AAA111')
+    client.general
+    client.technical
+    client.owners
+
+    # We cal also fetch all results
+    data = client.all
 
 ## Contributing
 
