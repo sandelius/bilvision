@@ -28,8 +28,14 @@ Or install it yourself as:
     client.technical
     client.owners
 
-    # We cal also fetch all results
+    # We can also fetch all results
     data = client.all
+
+    # Override global configuration at instance level
+    client = Bilvision::Request.new('AAA111',
+      user_id:  'uname',
+      password: '<new_secret>'
+    )
 
 ## Contributing
 
