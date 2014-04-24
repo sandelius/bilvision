@@ -12,7 +12,7 @@ module Bilvision
     #   Cars registration number.
     #
     # @param config [Hash]
-    #   Override global configurationfor this object.
+    #   Override global configurations for this object.
     def request(regnr, config = {})
       Request.new(regnr, config)
     end
