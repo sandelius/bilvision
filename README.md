@@ -23,7 +23,11 @@ Or install it yourself as:
       config.password = '<secret>'
     end
 
+    # Initialize a new request
     client = Bilvision::Request.new('AAA111')
+    # - or
+    client = Bilvision.request('AAA111')
+
     client.general
     client.technical
     client.owners

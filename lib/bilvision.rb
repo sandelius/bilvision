@@ -6,6 +6,17 @@ module Bilvision
 
   class << self
 
+    # Shortcut for creating a new request.
+    #
+    # @param regnr [String]
+    #   Cars registration number.
+    #
+    # @param config [Hash]
+    #   Override global configurationfor this object.
+    def request(regnr, config = {})
+      Request.new(regnr, config)
+    end
+
     # Returns the configuration object in use.
     #
     # @return [Bilvision::Config]
